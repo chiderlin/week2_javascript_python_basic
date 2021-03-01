@@ -23,19 +23,19 @@
                 console.log(add / data["count"]);
             }
             avg({
-		"count":3,
-		"employees":[
+		"count": 3,
+		"employees": [
 			{
-				"name":"John",
-				"salary":30000
+				"name": "John",
+				"salary": 30000
 			}, 
 			{
-				"name":"Bob",
-				"salary":60000
+				"name": "Bob",
+				"salary": 60000
 			},
 			{
-				"name":"Jenny",
-				"salary":50000
+				"name": "Jenny",
+				"salary": 50000
 			}
 
 		]
@@ -46,20 +46,20 @@
                 var max_value = 0;
                 for (var i = 0; i < nums.length; i++) {
                     for (var j = i+1; j < nums.length; j++) {
-                        var result = nums[i] * nums[j];
+                        var result = nums[i]*nums[j];
                         if (result > max_value) {
                             max_value = result;
                         };
                         if (nums.length == 2) {
-                            max_value=result;
+                            max_value = result;
                         };
                     };
                 };
                 console.log(max_value);
             }
-            maxProduct([5,20,2,6])
-            maxProduct([10,-20,0,3])
-            maxProduct([1,-10])
+            maxProduct([5, 20, 2, 6])
+            maxProduct([10, -20, 0, 3])
+            maxProduct([1, -10])
 
             // 第四題 - 演算法
             function twoSum(nums, target) {
@@ -73,7 +73,7 @@
                 };
 
             }
-            result=twoSum([2,11,7,15],9)
+            result=twoSum([2, 11, 7, 15], 9)
             console.log(result);
 
             // 第五題optional - 演算法
@@ -85,13 +85,13 @@
                         for (var j = i+1; j < nums.length; j++) {
                             if (nums[j] == 0) {
                                 count_zero += 1;
-                                if (j + 1 == nums.length) {
+                                if (j+1 == nums.length) {
                                     if (count_zero > max_value) {
                                         max_value = count_zero;
                                     };
                                 };
                             } else {
-                                if( count_zero > max_value) {
+                                if(count_zero > max_value) {
                                     max_value = count_zero;
                                 };
                                 break;
@@ -101,9 +101,9 @@
                 };
                 console.log(max_value);
             };
-            maxZeros([0,1,0,0]);
-            maxZeros([1,0,0,0,0,1,0,1,0,0]);
-            maxZeros([1,1,1,1,1]);
+            maxZeros([0, 1, 0, 0]);
+            maxZeros([1, 0, 0, 0, 0, 1, 0, 1, 0, 0]);
+            maxZeros([1, 1, 1, 1, 1]);
 
         </script>
     </head>

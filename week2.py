@@ -5,36 +5,42 @@ def calculate(min, max):
         total += i
     print(total)
 
+
 calculate(1, 3)
 calculate(4, 8)
 
 # 第二題 - python字典與列表
+
+
 def avg(data):
     add = 0
     for i in range(data["count"]):
         add += data["employees"][i]["salary"]
     print(add/data["count"])
 
+
 avg({
-    "count":3,
-    "employees":[
+    "count": 3,
+    "employees": [
         {
-            "name":"John",
-            "salary":30000
-        }, 
-        {
-            "name":"Bob",
-            "salary":60000
+            "name": "John",
+            "salary": 30000
         },
         {
-            "name":"Jenny",
-            "salary":50000
+            "name": "Bob",
+            "salary": 60000
+        },
+        {
+            "name": "Jenny",
+            "salary": 50000
         }
 
     ]
 })
 
 # 第三題 - 演算法
+
+
 def maxProduct(nums):
     max_value = 0
     for i in range(len(nums)):
@@ -45,11 +51,15 @@ def maxProduct(nums):
             if len(nums) == 2:
                 max_value = result
     print(max_value)
+
+
 maxProduct([5, 20, 2, 6])
 maxProduct([10, -20, 0, 3])
-maxProduct([1,-10])
+maxProduct([1, -10])
 
 # 第四題 - 演算法
+
+
 def twoSum(nums, target):
     for i in range(len(nums)):
         for j in range(i+1, len(nums)):
@@ -57,10 +67,13 @@ def twoSum(nums, target):
             if result == target:
                 return f"[{i}, {j}]"
 
+
 result = twoSum([2, 11, 7, 15], 9)
 print(result)
 
 # 第五題optional - 演算法
+
+
 def maxZeros(nums):
     max_zero = 0
     for i in range(len(nums)):
@@ -77,6 +90,7 @@ def maxZeros(nums):
                         max_zero = count_zero
                     break
     print(max_zero)
+
 
 maxZeros([0, 1, 0, 0])
 maxZeros([1, 0, 0, 0, 0, 1, 0, 1, 0, 0])
