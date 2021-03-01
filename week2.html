@@ -3,9 +3,9 @@
     <head>
         <script type="text/javascript">
             // 第一題 - 函式與流程控制
-            function calculate(min, max){
-                var total=0;
-                for(var i=min;i<=max;i++){
+            function calculate(min, max) {
+                var total = 0;
+                for (var i = min; i <= max; i++){
                     total += i;
                 };
                 console.log(total);
@@ -14,9 +14,9 @@
             calculate(4,8)
 
             // 第二題 - python字典與列表
-            function avg(data){
+            function avg(data) {
                 var add = 0;
-                for(var i=0;i<data["count"];i++){
+                for (var i = 0; i < data["count"]; i++) {
                     add += data["employees"][i]["salary"];
 
                 };
@@ -42,15 +42,15 @@
 	    });
 
             // 第三題 - 演算法
-            function maxProduct(nums){
-                var max_value=0;
-                for(var i=0;i<nums.length;i++){
-                    for(var j=i+1;j<nums.length;j++){
-                        var result = nums[i]*nums[j];
-                        if(result>max_value){
-                            max_value=result;
+            function maxProduct(nums) {
+                var max_value = 0;
+                for (var i = 0; i < nums.length; i++) {
+                    for (var j = i+1; j < nums.length; j++) {
+                        var result = nums[i] * nums[j];
+                        if (result > max_value) {
+                            max_value = result;
                         };
-                        if(nums.length==2){
+                        if (nums.length == 2) {
                             max_value=result;
                         };
                     };
@@ -62,11 +62,11 @@
             maxProduct([1,-10])
 
             // 第四題 - 演算法
-            function twoSum(nums, target){
-                for(var i=0;i<nums.length;i++){
-                    for(var j=i+1;j<nums.length;j++){
-                        var result=nums[i]+nums[j];
-                        if(result==target){
+            function twoSum(nums, target) {
+                for (var i = 0; i < nums.length; i++) {
+                    for (var j = i+1; j < nums.length; j++){
+                        var result = nums[i] + nums[j];
+                        if (result == target) {
                             return `[${i}, ${j}]`;
                         };
                     };
@@ -77,22 +77,22 @@
             console.log(result);
 
             // 第五題optional - 演算法
-            function maxZeros(nums){
-                var max_value=0;
-                for(var i=0;i<nums.length;i++){
-                    if(nums[i]==0){
-                        var count_zero=1;
-                        for(var j=i+1;j<nums.length;j++){
-                            if(nums[j]==0){
+            function maxZeros(nums) {
+                var max_value = 0;
+                for (var i = 0; i < nums.length; i++) {
+                    if (nums[i] == 0) {
+                        var count_zero = 1;
+                        for (var j = i+1; j < nums.length; j++) {
+                            if (nums[j] == 0) {
                                 count_zero += 1;
-                                if(j+1 == nums.length){
-                                    if(count_zero>max_value){
-                                        max_value=count_zero;
+                                if (j + 1 == nums.length) {
+                                    if (count_zero > max_value) {
+                                        max_value = count_zero;
                                     };
                                 };
-                            }else{
-                                if(count_zero>max_value){
-                                    max_value=count_zero;
+                            } else {
+                                if( count_zero > max_value) {
+                                    max_value = count_zero;
                                 };
                                 break;
                             };
