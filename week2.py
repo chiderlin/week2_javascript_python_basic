@@ -42,9 +42,12 @@ def maxProduct(nums):
             result = nums[i]*nums[j]
             if result > max_value:
                 max_value = result
+            if len(nums) == 2:
+                max_value = result
     print(max_value)
 maxProduct([5, 20, 2, 6])
 maxProduct([10, -20, 0, 3])
+maxProduct([1,-10])
 
 # 第四題 - 演算法
 def twoSum(nums, target):

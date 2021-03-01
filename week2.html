@@ -48,13 +48,18 @@
                     for(var j=i+1;j<nums.length;j++){
                         var result = nums[i]*nums[j];
                         if(result>max_value){
-                            max_value=result;                        }
+                            max_value=result;
+                        };
+                        if(nums.length==2){
+                            max_value=result;
+                        };
                     };
                 };
                 console.log(max_value);
             }
             maxProduct([5,20,2,6])
             maxProduct([10,-20,0,3])
+            maxProduct([1,-10])
 
             // 第四題 - 演算法
             function twoSum(nums, target){
